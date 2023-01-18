@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Studio</title>
+    <script
+      src="https://kit.fontawesome.com/2d9b67a497.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-transparent mx-5 justify-content-between"
+      >
+        <!--This div contains the logo and title of the page-->
+        <a href="/" class="title-combo text-decoration-none">
+          <div class="website-logo d-inline-block align-middle">
+            <img
+              src="images/logo.png"
+              alt="ninja studio"
+              class="transitionAEIO"
+            />
+          </div>
+          <div class="navbar-brand d-inline-block align-middle">
+            <h2>
+              Pragya
+            </h2>
+            <h6>
+              Studio
+            </h6>
+          </div>
+        </a>
+        <!-- this is the animated favourites text -->
+        <div class="favs d-none d-md-block">
+          <h4>
+            Favourites
+          </h4>
+        </div>
+        <!-- this is for search bar -->
+        <div class="search-bar position-relative w-25">
+          <div class="d-inline-block position-absolute">
+            <!-- magnifying glass- search icon -->
+            <i class="fas fa-search search-ico text-dark"></i>
+          </div>
+          <input
+            type="text"
+            name="search"
+            d-inline-block
+            position-absolute
+            placeholder="Search"
+            class="w-100 rounded-pill border-none p-1 text-center"
+          />
+          <div class="mx-3 d-inline-block position-absolute">
+            <!-- mic icon -->
+            <i class="fas fa-microphone mic-ico text-dark"></i>
+          </div>
+        </div>
+        <!-- this is for notification bell -->
+        <div class="notification-bell">
+          <img src="images/bell_icon.png" />
+          <span class="d-none d-md-inline-block">Notifications</span>
+        </div>
+        <!-- this is for profile picture -->
+        <div class="profile-picture d-none d-md-block">
+          <img src="images/profile.png" />
+        </div>
+      </nav>
+      <!-- End of Navbar -->
+    </header>
+
+    <!-- Main -->
+    <main class="container-fluid row mx-auto">
+      <section
+        class="col-md-9 me-auto overflow-auto"
+        style="max-height: 85vh;"
+        id="style-1"
+      >
+        <!-- Carousel -->
+        <section class="container-fluid row my-5">
+          <div class="col-6 col-md-4" id="CAROUSEL1">
+            <img src="images/CAROUSEL1.webp" width="100%" />
+          </div>
+          <div class="col-4 d-none d-md-block" id="CAROUSEL3">
+            <img src="images/CAROUSEL3.webp" width="100%" />
+          </div>
+          <div class="col-6 col-md-4" id="CAROUSEL2">
+            <img src="images/CAROUSEL2.webp" width="100%" />
+          </div>
+        </section>
+        <!-- End of Carousel -->
+
+        <!-- Latest Release -->
+        <h4 class="text-white mt-5">Latest Release</h4>
+        <section class="row container-fluid">
+          <div class="col-md-6 row text-white my-3">
+            <div class="d-flex col-10">
+              <a href="/play.html" class="col-4 playHover">
+                <img src="images/latest-release/fitoor.webp" width="100%" />
+              </a>
+              <p class="my-auto d-inline-block ms-2">
+                <b>Fitoor</b> <br />Jul 07, 2022
+              </p>
+            </div>
+            <div class="col-2">
+              <div class="dropdown text-end">
+                <a
+                  href="/play.html"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-ellipsis text-white"></i>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="/play.html"
+                      ><i class="fa-solid fa-play me-2"></i>Play Now</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-plus me-2"></i>Add To Queue</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-heart-circle-plus me-2"></i>Add To
+                      Favourites</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-circle-info me-2"></i>Get Info</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <p class="text-end">
+                3:25
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 row text-white my-3">
+            <div class="d-flex col-10">
+              <a href="/play.html" class="col-4 playHover">
+                <img src="images/latest-release/kesariya.webp" width="100%" />
+              </a>
+              <p class="my-auto d-inline-block ms-2">
+                <b>Kesariya</b> <br />Sep 9, 2022
+              </p>
+            </div>
+            <div class="col-2">
+              <div class="dropdown text-end">
+                <a
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-ellipsis text-white"></i>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="/play.html"
+                      ><i class="fa-solid fa-play me-2"></i>Play Now</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-plus me-2"></i>Add To Queue</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-heart-circle-plus me-2"></i>Add To
+                      Favourites</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-circle-info me-2"></i>Get Info</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <p class="text-end">
+                3: 57
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 row text-white my-3">
+            <div class="d-flex col-10">
+              <a href="/play.html" class="col-4 playHover">
+                <img src="images/latest-release/ranjha.webp" width="100%" />
+              </a>
+              <p class="my-auto d-inline-block ms-2">
+                <b>Ranjha</b> <br />Aug 11, 2021
+              </p>
+            </div>
+            <div class="col-2">
+              <div class="dropdown text-end">
+                <a
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-ellipsis text-white"></i>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="/play.html"
+                      ><i class="fa-solid fa-play me-2"></i>Play Now</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-plus me-2"></i>Add To Queue</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-heart-circle-plus me-2"></i>Add To
+                      Favourites</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-circle-info me-2"></i>Get Info</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <p class="text-end">
+                3: 14
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 row text-white my-3">
+            <div class="d-flex col-10">
+              <a href="/play.html" class="col-4 playHover">
+                <img src="images/latest-release/shayad.webp" width="100%" />
+              </a>
+              <p class="my-auto d-inline-block ms-2">
+                <b>Shayad</b> <br />Dec 3, 2021
+              </p>
+            </div>
+            <div class="col-2">
+              <div class="dropdown text-end">
+                <a
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-ellipsis text-white"></i>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="/play.html"
+                      ><i class="fa-solid fa-play me-2"></i>Play Now</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/play.html"
+                      ><i class="fa-solid fa-plus me-2"></i>Add To Queue</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/play.html"
+                      ><i class="fa-solid fa-heart-circle-plus me-2"></i>Add To
+                      Favourites</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/play.html"
+                      ><i class="fa-solid fa-circle-info me-2"></i>Get Info</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <p class="text-end">
+                3:10
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- End of Latest Release -->
+
+        <!-- Popular Artists -->
+        <h4 class="text-white mt-5">Popular Artists</h4>
+        <section
+          class="d-flex container-fluid overflow-auto text-nowrap mt-3"
+          id="style-2"
+        >
+          <div class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3">
+            <img
+              src="images/artists/ar-rahman.webp"
+              width="100%"
+              class="rounded-circle outline"
+            />
+            <p class="text-white text-center">A. R. Rahman</p>
+          </div>
+          <div class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3">
+            <img
+              src="images/artists/atif-aslam.webp"
+              width="100%"
+              class="rounded-circle outline"
+            />
+            <p class="text-white text-center">Atif Aslam</p>
+          </div>
+          <div class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3">
+            <img
+              src="images/artists/javed-ali.webp"
+              width="100%"
+              class="rounded-circle outline"
+            />
+            <p class="text-white text-center">Javed Ali</p>
+          </div>
+          <div class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3">
+            <img
+              src="images/artists/jubin-nautiyal.webp"
+              width="100%"
+              class="rounded-circle outline"
+            />
+            <p class="text-white text-center">Jubin Nautiyal</p>
+          </div>
+          <div class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3">
+            <img
+              src="images/artists/shreya-ghoshal.webp"
+              width="100%"
+              class="rounded-circle outline"
+            />
+            <p class="text-white text-center">Shreya Ghoshal</p>
+          </div>
+          <div class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3">
+            <img
+              src="images/artists/sonu-nigam.webp"
+              width="100%"
+              class="rounded-circle outline"
+            />
+            <p class="text-white text-center">Sonu Nigam</p>
+          </div>
+        </section>
+        <!-- End of Popular Artists -->
+
+        <!-- Mood Stations -->
+        <section class="row container-fluid py-2 my-2 bg-mood">
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 px-3 my-auto">
+            <img src="images/mood/mood.webp" width="100%" class="rounded" />
+            <!-- <p class="text-white text-center">Honey Singh</p> -->
+          </div>
+          <div
+            class="my-auto col-8 col-sm-9 col-md-9 col-lg-10 d-flex container-fluid overflow-auto text-nowrap mt-3"
+            id="style-1"
+          >
+            <div
+              class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3 my-auto text-center position-relative"
+            >
+              <img
+                src="images/mood/chill.webp"
+                width="100%"
+                class="rounded-circle outline opacity-50"
+              />
+
+              <div
+                class="text-white position-absolute top-50 start-50 translate-middle"
+              >
+                Chill
+              </div>
+            </div>
+            <div
+              class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3 my-auto text-center position-relative"
+            >
+              <img
+                src="images/mood/guitar.webp"
+                width="100%"
+                class="rounded-circle outline opacity-50"
+              />
+              <div
+                class="text-white position-absolute top-50 start-50 translate-middle"
+              >
+                Rock
+              </div>
+            </div>
+            <div
+              class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3 my-auto text-center position-relative"
+            >
+              <img
+                src="images/mood/love.webp"
+                width="100%"
+                class="rounded-circle outline opacity-50"
+              />
+              <div
+                class="text-white position-absolute top-50 start-50 translate-middle shadow"
+              >
+                Love
+              </div>
+            </div>
+            <div
+              class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3 my-auto text-center position-relative"
+            >
+              <img
+                src="images/mood/pop.webp"
+                width="100%"
+                class="rounded-circle outline opacity-50"
+              />
+              <div
+                class="text-white position-absolute top-50 start-50 translate-middle"
+              >
+                Pop
+              </div>
+            </div>
+            <div
+              class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3 my-auto text-center position-relative"
+            >
+              <img
+                src="images/mood/retro.webp"
+                width="100%"
+                class="rounded-circle outline opacity-50"
+              />
+              <div
+                class="text-white position-absolute top-50 start-50 translate-middle"
+              >
+                Retro
+              </div>
+            </div>
+            <div
+              class="col-5 col-sm-4 col-md-3 col-lg-2 d-inline-block px-3 my-auto text-center position-relative"
+            >
+              <img
+                src="images/mood/workout.webp"
+                width="100%"
+                class="rounded-circle outline opacity-50"
+              />
+              <div
+                class="text-white position-absolute top-50 start-50 translate-middle"
+              >
+                Workout
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Mood Stations -->
+
+        <!-- Theme Carousel -->
+        <section class="container my-5 w-100 d-flex" id="theme-carousel">
+          <div
+            class="mx-2 w-100 position-relative overflow-hidden bg-danger"
+            id="theme11"
+          >
+            <div id="theme1"></div>
+            <div
+              class="position-absolute w-100 text-center top-50 left-100 text-white fw-bold h5"
+            >
+              Party
+            </div>
+          </div>
+          <!-- <div class="col-1"></div> -->
+          <div
+            class="mx-2 w-100 position-relative overflow-hidden bg-primary d-none d-md-block"
+            id="theme12"
+          >
+            <div id="theme2"></div>
+            <div
+              class="position-absolute w-100 text-center top-50 left-100 text-white fw-bold h5"
+            >
+              Electronic
+            </div>
+          </div>
+          <!-- <div class="coPartyl-1"></div> -->
+          <div
+            class="mx-2 w-100 position-relative overflow-hidden bg-success"
+            id="theme13"
+          >
+            <div id="theme3"></div>
+            <div
+              class="position-absolute w-100 text-center top-50 left-100 text-white fw-bold h5"
+            >
+              Road Trip
+            </div>
+          </div>
+        </section>
+        <!-- End of Theme Carousel -->
+
+        <!-- Latest English -->
+        <h4 class="text-white mt-5">Latest English</h4>
+        <section class="container-fluid row">
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=1"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=2"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=3"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=4"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=5"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=6"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+        </section>
+        <!-- End of Latest English -->
+
+        <!-- Latest Hindi -->
+        <h4 class="text-white mt-5">Latest Hindi</h4>
+        <section class="container-fluid row">
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=7"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=8"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=9"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=10"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=11"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 text-white mx-auto">
+            <img
+              src="https://picsum.photos/400/300?id=12"
+              class="w-100 outline"
+            />
+            <p class="mb-0"><b>Onism</b></p>
+            <p>Aug 11, 2017</p>
+          </div>
+        </section>
+        <!-- End of Latest Hindi -->
+      </section>
+
+      <aside class="col-md-3 mx-auto d-none d-md-block">
+        <div class="row">
+          <h3 class="text-white d-inline-block col-6">Queue</h3>
+          <div class="dropdown text-end d-inline-block col-6 mt-auto">
+            <a
+              href="/play.html"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              class="ms-auto text-success text-decoration-none"
+            >
+              Queue
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="/play.html">Playlists</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/play.html">Favourite Songs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Songs -->
+        <div class="overflow-auto mt-2" style="max-height: 80vh;" id="style-2">
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">01</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=111" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">02</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=112" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">03</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=113" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">04</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=114" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">05</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=115" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">06</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=116" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">07</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=117" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">08</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=118" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">09</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=119" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">10</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=120" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">11</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=122" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">12</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=123" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">13</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=124" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">14</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=125" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">15</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=126" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">16</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=127" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">17</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=128" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">18</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=129" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">19</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=130" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">20</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=131" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">21</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=132" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">22</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=134" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">23</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=135" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">24</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=136" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div class="row container-fluid mx-0 mt-3 text-white px-0 outline">
+            <div class="col-1 my-auto">25</div>
+            <div class="col-3 col-lg-4">
+              <img src="https://picsum.photos/400/300?id=137" class="w-100" />
+            </div>
+            <div class="col-5 my-auto"><b>Mirage</b><br />Else</div>
+            <div class="col-1 my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="active-song-description">
+        <!-- song image -->
+        <div id="song-image">
+          <img src="images/latest-release/fitoor.webp" />
+        </div>
+        <!-- song name and author -->
+        <div class="song-desc">
+          <div>
+            Imagine by John
+          </div>
+          <div>
+            John Lenon
+          </div>
+          <!-- heart icon and ban icon -->
+        </div>
+        <div class="heart-and-ban-icon">
+          <span>
+            <i class="far fa-heart"></i>
+          </span>
+          <span>
+            <i class="fas fa-ban"></i>
+          </span>
+        </div>
+      </div>
+      <!-- these are the main player controls -->
+      <div class="player">
+        <div class="controls">
+          <div><i class="fas fa-random"></i></div>
+          <div><i class="fas fa-step-backward"></i></div>
+          <div><i class="fas fa-pause-circle"></i></div>
+          <div><i class="fas fa-step-forward"></i></div>
+          <div><i class="fas fa-redo"></i></div>
+        </div>
+        <!-- this is the slider -->
+        <div id="slider">
+          <!-- current time -->
+          <div class="time">
+            1:39
+          </div>
+          <div class="slidecontainer">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+          <!-- total time -->
+          <div class="time">
+            4:44
+          </div>
+        </div>
+      </div>
+      <!-- other icons including the volume slider and all -->
+      <div class="extras">
+        <div>
+          <i class="fas fa-list-ul"></i>
+        </div>
+        <div>
+          <i class="fas fa-laptop"></i>
+        </div>
+        <div>
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="slidecontainer" style="width: 30%;">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            class="slider"
+            id="myRange"
+            style="margin-top: 0px;"
+          />
+        </div>
+        <div>
+          <i class="fas fa-expand-alt"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
